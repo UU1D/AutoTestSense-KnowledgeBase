@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Browse generalized and instance-level commonsense knowledge extracted from mobile application bug reports."
+    />
+    <meta name="theme-color" content="#f6f1e8" />
+    <title>AutoTestSense Knowledge Base</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <div class="ambient ambient-one" aria-hidden="true"></div>
+    <div class="ambient ambient-two" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#/" aria-label="AutoTestSense Knowledge Base home">
+        <span class="brand-mark" aria-hidden="true">AS</span>
+        <span>
+          <strong>AutoTestSense</strong>
+          <small>Testing commonsense knowledge base</small>
+        </span>
+      </a>
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <a href="#/generalized" data-route="generalized">Generalized rules</a>
+        <a href="#/instances" data-route="instances">Instance-level rules</a>
+        <a href="#/about" data-route="about">About</a>
+      </nav>
+    </header>
+
+    <main id="app" tabindex="-1">
+      <section class="loading-state" aria-live="polite">
+        <span class="loader" aria-hidden="true"></span>
+        <p>Loading the commonsense knowledge base…</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>AutoTestSense testing commonsense knowledge base.</p>
+      <a href="#/about">Dataset notes</a>
+    </footer>
+
+    <template id="home-template">
+      <section class="hero page-shell">
+        <div class="eyebrow">A navigable research artifact</div>
+        <h1>Explore reusable testing commonsense.</h1>
+        <p class="hero-copy">
+          Browse generalized commonsense rules or trace report-grounded
+          instance-level rules back to their source bug reports.
+        </p>
+        <div class="catalog-choices">
+          <a class="choice-card choice-card-generalized" href="#/generalized">
+            <span class="choice-number" data-stat="generalized">—</span>
+            <span class="choice-label">Generalized commonsense rules</span>
+            <span class="choice-description">
+              Reusable behavioral expectations derived from semantically related
+              instance-level rules.
+            </span>
+            <span class="choice-action">Browse generalized rules <b>→</b></span>
+          </a>
+          <a class="choice-card choice-card-instance" href="#/instances">
+            <span class="choice-number" data-stat="instances">—</span>
+            <span class="choice-label">Instance-level commonsense rules</span>
+            <span class="choice-description">
+              Structured behavioral expectations extracted from individual bug
+              reports.
+            </span>
+            <span class="choice-action">Browse instance-level rules <b>→</b></span>
+          </a>
+        </div>
+        <div class="hero-footnote">
+          <span data-stat="issues">—</span> source bug reports · keyword search ·
+          alphabetical index · supporting-rule traceability
+        </div>
+      </section>
+    </template>
+  </body>
+</html>
+

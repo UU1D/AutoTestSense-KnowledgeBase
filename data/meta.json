@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-10-10T09:36:36.895Z",
+  "instances": 3708,
+  "generalized": 1399,
+  "issues": 4634,
+  "linked_instances": 3708,
+  "catalog": {
+    "schema_version": "1.0",
+    "catalog_role": "SERIAL_NO_MATCH_INITIAL_STATE",
+    "catalog_version": 1167,
+    "generalized_rule_count": 1399,
+    "covered_unit_count": 3708
+  }
+}
